@@ -1,6 +1,5 @@
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 const cities = [];
-console.log(cities)
 
 fetch(endpoint)
     .then(blob => blob.json())
@@ -27,7 +26,6 @@ function displayMatches() {
         `
     }).join('')
     suggestions.innerHTML = html
-    console.log(matchArray)
 }
 
 const searchInput = document.querySelector('.search')
